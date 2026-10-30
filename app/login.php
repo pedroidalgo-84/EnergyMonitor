@@ -36,7 +36,7 @@
 </html>
 <?php
     $usuario = [];
-    $usuarioEmail = read(database(), "usuarios", "email=" . $email, $usuario);
+    $usuariologin = read(database(), "usuarios", "email=" . $email, $usuario);
     if ($usuario['senha'] !== $senha){
         header("Location: login.php?erro=login_inválido");
     }elseif($usuario['senha'] == $senha){
