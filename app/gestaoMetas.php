@@ -1,7 +1,26 @@
 <?php
     require_once __DIR__ . "/init.php";
     $setores = readAll(database(), "setor");
-    $gastos = [3100012, 2400042];
+    $ambientesSetorA = readAll(database(), "ambientes", "setor_id = 1");
+    $ambientesSetorB = readAll(database(), "ambientes", "setor_id = 2");
+    $metas = readAll(database(), "metas");
+    $somaA = 0;
+    $somaB = 0;
+
+    foreach($ambientesSetorA as $a){
+        $ambienteid1 = $a['id'];
+
+        $metaA = readAll(database(), "metas", "ambiente_id= {$ambienteid1}");
+        $somaA += $metaA[0]['meta_kwh'];
+    }
+    foreach($ambientesSetorB as $b){
+        $ambienteid2 = $b['id'];
+
+        $metaB = readAll(database(), "metas", "ambiente_id= {$ambienteid2}");
+        $somaB += $metaB[0]['meta_kwh'];
+    }
+
+
 ?>
 <html>
     <head>
@@ -29,7 +48,7 @@
                             foreach($setores as $setor):
                                 $contador += 1
                             ?>
-                            <h3><?= $contador ?>- <?= $setor["nome"]?></h3>
+                            <h3><?= $contador ?>. <?= $setor["nome"]?>- </h3>
                             <?php
                             endforeach;
                             ?>
@@ -54,12 +73,13 @@
                             foreach($setores as $setor):
                                 $contador1++
                             ?>
-                            <h3><?= $contador1 ?>- <?= $setor["nome"]?></h3>
+                            <h3><?php print($contador1) ?>. <?php print($setor['nome'])?> - <?php if($contador1 == 1): print($somaA)?> kwh<?php else: print($somaB)?> kwh<?php endif ?></h3>
                             <?php
                             endforeach;
                             ?>
                         </div>
                     </div>
+
 
 
                     </div>
