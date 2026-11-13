@@ -1,0 +1,90 @@
+body{
+    background-color: #090b0c;
+}
+
+.info{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info h1{
+    margin-right: 50px;
+}
+
+.info h2{
+    color: #c2e9a0;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+.andar{
+    background-color: #151a1c;
+    padding: 20px;
+    border: 1px solid #7bd798;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    width: fit-content;
+}
+
+.andar h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.andar table{
+    margin-left: 20px;
+    width: 1550px;  
+}
+
+.nome{
+    width: 220px;
+}
+
+.ambientes td{
+    margin-right: 70px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.area{
+    font-size: 20px;
+    color: #7bd798;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.titulo_andar{
+    display: flex;
+}
+
+.info_andar{
+    display: flex;
+    justify-content:space-between;
+}
+
+.dados{
+    color: #c2e9a0;
+}
+
+.ambientes{
+    background-color: #2f312f;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.info_ambientes{
+    background-color: #2f312f;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.status{
+    padding: 5px;
+    border: 1px solid #7bd798;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+
