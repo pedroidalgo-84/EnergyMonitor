@@ -9,20 +9,108 @@ body{
     border-radius: 45px;
     border: 2px solid #007e39;
     margin-bottom: 20px;
-    margin-right: 1300px;
+    margin-right: 50px;
 }
 .form-manual h2 {
     color: #31c166;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
+.form-manual label {
+    color: #ffffff;
+    margin-left: 30px;
+}
+.form-manual select {
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 2px solid  #c2e9a0;
+    background-color: #c2e9a0;
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+}
+.form-manual input{
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 2px solid  #c2e9a0;
+    background-color: #c2e9a0;
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+}
+.form-manual button {
+    margin-left: 160px;
+    border-radius: 20px;
+    border: 2px solid  #31c166;
+    background-color: #31c166;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    
+}
+
 .conteudo h1 {
     color: #31c166;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
-.from-registro {
+.coneiner-conteudo {
+    display: flex;
+    margin-left: 10px;
+}
+.form-registro {
     background-color: #151a1c;
     padding: 20px;
     border-radius: 45px;
     border: 2px solid #007e39;
     margin-bottom: 20px;
+    margin-right: 60px;
+    height: 600px;
+    margin-top: 200px;
+    width: 870px;
 }
+.form-registro h2 {
+    color: #31c166;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.form-registro table thead tr {
+    background-color: #4fbe71;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.form-registro table thead tr th {
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+.form-registro table tbody tr td {
+    background-color: #c2e9a0;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.status{
+    border: 1px solid #073c23;
+    border-radius: 100px;
+    background-color: #073c23;
+    width: 260px;
+    height: 60px;
+    margin-left: 1300px;
+    
+    
+}
+.status p {
+    color: #00ff73;
+    margin-left: 26px;
+    margin-top: 19px;
+}
+ 

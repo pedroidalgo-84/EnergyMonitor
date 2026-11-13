@@ -107,3 +107,7 @@ summary::-webkit-details-marker {
   height: 30px;
   margin-right: 5px;
 }
+
+.usuario{
+  float: left;
+}
