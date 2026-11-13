@@ -13,9 +13,10 @@ try {
     $databaseStatus = 'Indisponível';
 }
 ?>
-<html>
+<html lang="pt-BR">
 
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="./css/styleDados.css">
     <link rel="stylesheet" href="./css/styleMenu.css">
     <title>Lançamento de Dados</title>
@@ -35,7 +36,7 @@ try {
             <div class="form-container">
                 <div class=" form-manual">
                     <h2>Lançamento Manual</h2>
-                    <form action="" method="post">
+                    <form action="processa_lancamento.php" method="post" autocomplete="off">
                         <label for="ambiente"><b>Selecione o Ambiente / Medidor:</b></label>
                         <br>
                         <select id="ambiente" name="ambiente" required>
@@ -89,6 +90,7 @@ try {
                                 <th>Origem</th>
                                 <th>Area m2</th>
                                 <th>Estado</th>
+                                <th>Opções</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -100,6 +102,10 @@ try {
                                     <td><?= $leitura['origem'] ?></td>
                                     <td><?= $leitura['area_m2_leitura'] ?></td>
                                     <td><?= $leitura['estado_medidor_leituras'] ?></td>
+                                    <td>
+                                        <a href="excluir_leitura.php?id=<?= $leitura['id'] ?>" onclick="return confirm('Quer excluir esse dado?')">Excluir</a>
+                                    </td>
+
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -112,26 +118,3 @@ try {
 
 
 </html>
-<?php
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $ambienteDado = $_POST['ambiente'];
-$ambienteBanco = read(database(), "ambientes", "id = $ambienteDado");
-$datahoraDado = $_POST['data_hora'];
-$valorRelogioDado = $_POST['valor_relogio'];
-$responsavelDado = $_POST['responsavel'];
-$setorDado = $_POST['setor'];
-$statusDado = $_POST['status_bloco'];
-$dados = [
-    'id' => null,
-    'ambiente_id' => $ambienteBanco['id'],
-    'usuario_id' => 1,
-    'data_hora' => $datahoraDado,
-    'leitura_acumulada_kwh' => $valorRelogioDado,
-    'origem' => 'Manual',
-    'area_m2_leitura' => $ambienteBanco['area_m2'],
-    'codigo_medidor' => $ambienteBanco['codigo_medidor'],
-    'estado_medidor_leituras' => $statusDado,
-];
-create(database(), "leituras", $dados);
-}
-?>
