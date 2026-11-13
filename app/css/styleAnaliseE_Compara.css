@@ -1,0 +1,78 @@
+body{
+    background-color: #090b0c;
+}
+h2{
+    margin-bottom: 10px;
+}
+
+.card{
+    background-color: #151a1c;
+    border: 1px solid #007e39;
+    padding: 20px;
+    border-radius: 30px;
+    width: 45%;
+    margin-right: 50px;
+    color: #e0f9b1;
+}
+.card select{
+    background-color: #e0f9b1;
+    width: 250px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+}
+.card button{
+    background-color: #007e39;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+    border: none;
+    margin-left: 50px;
+}
+
+.comparativo{
+    display: flex;
+    background-color: #151a1c;
+    border: 1px solid #007e39;
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+}
+.quimica01{
+    background-color: #151a1c;
+    border: 1px solid #007e39;
+    padding: 20px;
+    border-radius: 30px;
+    width: 45%;
+}
+.quimica01 h3{
+    margin-bottom: 15px;
+}
+
+.quimica02{
+    background-color: #151a1c;
+    border: 1px solid #007e39;
+    padding: 20px;
+    border-radius: 30px;
+    width: 45%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.quimica02 h3{
+    margin-bottom: 15px;
+}
+
+.relatorio{
+    background-color: #151a1c;
+    border: 1px solid #007e39;
+    padding: 20px;
+    border-radius: 30px;
+    width: 45%;
+    font-size: 150%;
+}
+.relatorio h3{
+    font-size: 100%;
+    margin-bottom: 15px;
+}
