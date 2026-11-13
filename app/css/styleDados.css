@@ -1,24 +1,29 @@
+@import url('https://fonts.google.com/');
 
 body{
     background-color: #090b0c;
 }
 .form-manual {
-    width: 80%;
+    width: 700px;
     background-color: #151a1c;
     padding: 20px;
     border-radius: 45px;
     border: 2px solid #007e39;
     margin-bottom: 20px;
     margin-right: 50px;
+    height: 850px;
+    
 }
 .form-manual h2 {
     color: #31c166;
     margin-bottom: 30px;
     margin-left: 20px;
+    font-family: 'Crete Round', sans-serif;
 }
 .form-manual label {
     color: #ffffff;
     margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 .form-manual select {
     margin-left: 30px;
@@ -28,6 +33,8 @@ body{
     margin-top: 20px;
     width: 600px;
     height: 50px;
+    font-size: 20px;
+    font-family: 'Crete Round', sans-serif;
 }
 .form-manual input{
     margin-left: 30px;
@@ -37,6 +44,8 @@ body{
     margin-top: 20px;
     width: 600px;
     height: 50px;
+    font-size: 20px;
+    font-family: 'Crete Round', sans-serif;
 }
 .form-manual button {
     margin-left: 160px;
@@ -46,6 +55,8 @@ body{
     margin-top: 20px;
     width: 300px;
     height: 50px;
+    font-size: 16px;
+    font-family: 'Crete Round', sans-serif;
     
 }
 
@@ -53,6 +64,7 @@ body{
     color: #31c166;
     margin-bottom: 20px;
     margin-left: 10px;
+    font-family: 'Crete Round', sans-serif;
 }
 .coneiner-conteudo {
     display: flex;
@@ -65,32 +77,44 @@ body{
     border: 2px solid #007e39;
     margin-bottom: 20px;
     margin-right: 60px;
-    height: 600px;
-    margin-top: 200px;
-    width: 870px;
+    width: 800px;
+    height: 450px;
 }
 .form-registro h2 {
     color: #31c166;
     margin-bottom: 50px;
     margin-left: 20px;
+    font-family: 'Crete Round', sans-serif;
 }
 .form-registro table thead tr {
     background-color: #4fbe71;
     border-radius: 20px;
     margin-bottom: 20px;
+    font-family: 'Crete Round', sans-serif;
 }
 .form-registro table thead tr th {
     color: #000000;
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
+    width: 230px;
+    font-family: 'Crete Round', sans-serif;
 }
 .form-registro table tbody tr td {
     background-color: #c2e9a0;
     color: #000000;
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
+    font-family: 'Crete Round', sans-serif;
+}
+.form-registro table tbody tr td a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 10px solid #ff0000;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-family: 'Crete Round', sans-serif;
+
 }
 
 .form-container {
@@ -105,12 +129,13 @@ body{
     width: 260px;
     height: 60px;
     margin-left: 1300px;
-    
+    margin-bottom: 20px;
     
 }
 .status p {
     color: #00ff73;
     margin-left: 26px;
     margin-top: 19px;
+    font-family: 'Crete Round', sans-serif;
 }
  
