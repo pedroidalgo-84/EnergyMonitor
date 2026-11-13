@@ -27,7 +27,7 @@
                 </summary>
                 <div class="elementos-blocos">
                     <?php foreach($setores as $s): ?>
-                        <button class="item"><a href="./estrutura_medidores.php?id=<?= $s['id'] ?>"><?= $s['nome'] ?></a></button>
+                        <button class="item"><a href="./setores_ambientes.php?id=<?= $s['id'] ?>"><?= $s['nome'] ?></a></button>
                     <?php endforeach ?>
                     </div>
             </details>
