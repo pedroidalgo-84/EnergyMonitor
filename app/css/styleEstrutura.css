@@ -15,7 +15,7 @@ body{
 .setor_amarelo{
     background-color: #151a1c;
     padding: 20px;
-    border: 1px solid #7bd798;
+    border: 1px solid #fff0b3;
     border-radius: 20px;
     margin-bottom: 40px;
     animation: 0.5s ease-in-out 0s 1 normal none running aparecer;
